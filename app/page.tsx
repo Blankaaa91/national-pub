@@ -64,27 +64,25 @@ export default function HomePage() {
             style={{ animationDelay: "0.4s" }}
           >
             <Link href="/menu" className="btn-primary">
-              🍺 Voir le menu
+              Voir le menu
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </Link>
             <Link href="/contact" className="btn-ghost">
-              📍 Nous trouver
+              Nous trouver
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </Link>
           </div>
 
           {/* Quick info chips */}
           <div className="mt-14 flex flex-wrap gap-3" style={{ animationDelay: "0.55s" }}>
-            {[
-              { icon: "📍", text: PUB.address.full },
-              { icon: "📞", text: PUB.phone },
-            ].map((chip) => (
-              <div
-                key={chip.text}
-                className="flex items-center gap-2 text-pub-muted text-sm bg-pub-surface/60 backdrop-blur-sm border border-pub-border/60 rounded-full px-4 py-2"
-              >
-                <span aria-hidden="true">{chip.icon}</span>
-                {chip.text}
-              </div>
-            ))}
+            <div className="flex items-center gap-2 text-pub-muted text-sm bg-pub-surface/60 backdrop-blur-sm border border-pub-border/60 rounded-full px-4 py-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-pub-accent/70 flex-shrink-0" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              {PUB.address.full}
+            </div>
+            <a href={PUB.phoneHref} className="flex items-center gap-2 text-pub-muted text-sm bg-pub-surface/60 backdrop-blur-sm border border-pub-border/60 rounded-full px-4 py-2 hover:border-pub-accent/40 hover:text-pub-cream transition-colors duration-200">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-pub-accent/70 flex-shrink-0" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.93 9.93a19.79 19.79 0 01-3.07-8.67A2 2 0 012.84 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 8.62a16 16 0 006.29 6.29l.97-.97a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              {PUB.phone}
+            </a>
           </div>
         </div>
       </section>
@@ -230,7 +228,8 @@ export default function HomePage() {
 
         <ScrollReveal delay={200} className="text-center mt-12">
           <Link href="/menu" className="btn-primary">
-            🍺 Voir toute la carte
+            Voir toute la carte
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </Link>
         </ScrollReveal>
       </section>
@@ -251,7 +250,7 @@ export default function HomePage() {
             {/* Address */}
             <ScrollReveal delay={0}>
               <div className="pub-card h-full">
-                <span className="text-2xl mb-4 block" aria-hidden="true">📍</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-pub-accent mb-4" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 <h3 className="font-display text-lg text-pub-cream mb-2">Adresse</h3>
                 <address className="not-italic text-pub-muted leading-relaxed">
                   {PUB.address.street}<br />
@@ -272,7 +271,7 @@ export default function HomePage() {
             {/* Hours */}
             <ScrollReveal delay={80}>
               <div className="pub-card h-full">
-                <span className="text-2xl mb-4 block" aria-hidden="true">🕐</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-pub-accent mb-4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 <h3 className="font-display text-lg text-pub-cream mb-3">
                   Horaires
                   <span className="text-xs text-pub-muted font-body font-normal ml-2 italic">
@@ -295,14 +294,15 @@ export default function HomePage() {
             {/* Contact */}
             <ScrollReveal delay={160}>
               <div className="pub-card h-full flex flex-col">
-                <span className="text-2xl mb-4 block" aria-hidden="true">📞</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-pub-accent mb-4" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.93 9.93a19.79 19.79 0 01-3.07-8.67A2 2 0 012.84 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 8.62a16 16 0 006.29 6.29l.97-.97a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
                 <h3 className="font-display text-lg text-pub-cream mb-2">Contact</h3>
                 <p className="text-pub-muted text-sm mb-5">
                   Pour réserver un espace ou poser une question, n&apos;hésitez pas à nous appeler.
                 </p>
                 <div className="mt-auto flex flex-col gap-3">
                   <a href={PUB.phoneHref} className="btn-primary justify-center">
-                    📞 {PUB.phone}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 flex-shrink-0" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.93 9.93a19.79 19.79 0 01-3.07-8.67A2 2 0 012.84 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 8.62a16 16 0 006.29 6.29l.97-.97a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    {PUB.phone}
                   </a>
                   <Link href="/contact" className="btn-ghost justify-center">
                     Plus d&apos;infos

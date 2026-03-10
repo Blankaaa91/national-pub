@@ -19,10 +19,9 @@ export const PUB = {
   mapsEmbed: "https://www.google.com/maps?q=Rue+du+Temple+23+2022+Bevaix&output=embed",
   mapsDirections: "https://www.google.com/maps/dir/?api=1&destination=Rue+du+Temple+23+2022+Bevaix",
 
-  // Social media — add your handles or remove unused ones
   social: {
-    facebook:  null, // e.g. "https://facebook.com/nationalpubbevaix"
-    instagram: null, // e.g. "https://instagram.com/nationalpub"
+    facebook:  "https://www.facebook.com/leseb71/?locale=fr_FR",
+    instagram: "https://www.instagram.com/nationalpubevaix/",
   },
 
   // Opening hours — PLACEHOLDER, replace with real hours
