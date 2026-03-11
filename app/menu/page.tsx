@@ -26,10 +26,6 @@ export default function MenuPage() {
           <p className="text-pub-muted mt-4 text-base md:text-lg italic">
             Scannez, choisissez, profitez.
           </p>
-          <p className="text-pub-border text-xs mt-3">
-            ⚠️ Données exemples — à remplacer par la vraie carte. Voir{" "}
-            <code className="text-pub-muted">data/menu.ts</code>
-          </p>
         </div>
       </div>
 

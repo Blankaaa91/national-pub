@@ -115,18 +115,29 @@ export default function ContactPage() {
 
       {/* ─── Map ─── */}
       <ScrollReveal className="mx-auto max-w-6xl px-5 mb-12">
-        <div className="w-full h-64 md:h-80 rounded-sm overflow-hidden border border-pub-border">
+        <div className="w-full h-72 md:h-96 rounded-sm overflow-hidden border border-pub-border relative">
           <iframe
-            src="https://maps.google.com/maps?q=Rue+du+Temple+23,+2022+Bevaix,+Suisse&output=embed"
+            src="https://maps.google.com/maps?q=Rue+du+Temple+23,+2022+Bevaix,+Suisse&t=&z=16&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Localisation du National Pub à Bevaix"
+            title="Localisation du National Pub — Rue du Temple 23, 2022 Bevaix"
           />
         </div>
+        <p className="text-center text-pub-muted text-xs mt-3">
+          📍 Rue du Temple 23, 2022 Bevaix —{" "}
+          <a
+            href={PUB.mapsDirections}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pub-accent hover:underline"
+          >
+            Ouvrir dans Google Maps
+          </a>
+        </p>
       </ScrollReveal>
 
       {/* ─── QR code info ─── */}
