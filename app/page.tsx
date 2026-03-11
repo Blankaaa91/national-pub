@@ -272,12 +272,7 @@ export default function HomePage() {
             <ScrollReveal delay={80}>
               <div className="pub-card h-full">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-pub-accent mb-4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <h3 className="font-display text-lg text-pub-cream mb-3">
-                  Horaires
-                  <span className="text-xs text-pub-muted font-body font-normal ml-2 italic">
-                    (à confirmer)
-                  </span>
-                </h3>
+                <h3 className="font-display text-lg text-pub-cream mb-3">Horaires</h3>
                 <ul className="space-y-1.5" role="list">
                   {PUB.hours.map((h) => (
                     <li key={h.days} className="flex justify-between text-sm gap-3">

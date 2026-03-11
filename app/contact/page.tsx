@@ -82,12 +82,7 @@ export default function ContactPage() {
           <div className="pub-card h-full">
             <div className="flex items-center gap-3 mb-5">
               <span className="text-3xl" aria-hidden="true">🕐</span>
-              <h2 className="font-display text-xl text-pub-cream">
-                Horaires
-                <span className="block text-sm text-pub-muted font-body font-normal italic mt-0.5">
-                  (à confirmer)
-                </span>
-              </h2>
+              <h2 className="font-display text-xl text-pub-cream">Horaires</h2>
             </div>
             <ul className="space-y-2.5" role="list">
               {PUB.hours.map((h) => (
@@ -97,9 +92,7 @@ export default function ContactPage() {
                 >
                   <span className="text-pub-muted">{h.days}</span>
                   <span
-                    className={`font-semibold text-right ${
-                      h.time === "Fermé" ? "text-pub-brick" : "text-pub-cream"
-                    }`}
+                    className="font-semibold text-right text-pub-cream"
                   >
                     {h.time}
                   </span>

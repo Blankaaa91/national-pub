@@ -24,13 +24,11 @@ export const PUB = {
     instagram: "https://www.instagram.com/nationalpubevaix/",
   },
 
-  // Opening hours — PLACEHOLDER, replace with real hours
   hours: [
-    { days: "Lundi – Mardi",   time: "Fermé" },
-    { days: "Mercredi – Jeudi", time: "17h00 – 23h00" },
-    { days: "Vendredi",         time: "17h00 – 01h00" },
-    { days: "Samedi",           time: "15h00 – 01h00" },
-    { days: "Dimanche",         time: "15h00 – 22h00" },
+    { days: "Lundi – Jeudi",  time: "8h00–14h00 / 17h00–23h00" },
+    { days: "Vendredi",       time: "8h00–14h00 / 17h00–2h00" },
+    { days: "Samedi",         time: "9h00–13h00 / 17h00–2h00" },
+    { days: "Dimanche",       time: "9h00–17h00" },
   ],
 
   activities: [
