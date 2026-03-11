@@ -99,9 +99,6 @@ export default function ContactPage() {
                 </li>
               ))}
             </ul>
-            <p className="text-pub-border text-xs mt-4 italic">
-              ⚠️ Horaires indicatifs — à confirmer dans <code>constants/pub.ts</code>
-            </p>
           </div>
         </ScrollReveal>
       </div>

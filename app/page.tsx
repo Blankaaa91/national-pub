@@ -277,7 +277,7 @@ export default function HomePage() {
                   {PUB.hours.map((h) => (
                     <li key={h.days} className="flex justify-between text-sm gap-3">
                       <span className="text-pub-muted">{h.days}</span>
-                      <span className={`font-semibold ${h.time === "Fermé" ? "text-pub-brick" : "text-pub-cream"}`}>
+                      <span className="font-semibold text-pub-cream">
                         {h.time}
                       </span>
                     </li>
