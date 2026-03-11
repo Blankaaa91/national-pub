@@ -100,7 +100,7 @@ export function Footer() {
               {PUB.hours.map((h) => (
                 <li key={h.days} className="flex justify-between gap-2 text-sm">
                   <span className="text-pub-muted/70">{h.days}</span>
-                  <span className={`font-medium ${h.time === "Fermé" ? "text-pub-brick/90" : "text-pub-cream/90"}`}>
+                  <span className="font-medium text-pub-cream/90">
                     {h.time}
                   </span>
                 </li>
