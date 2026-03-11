@@ -263,6 +263,8 @@ export const MENU: MenuCategory[] = [
     label: "Chaud & Grillé",
     emoji: "🍔",
     items: [
+      { name: "Petite Portion de Frites", price: "6.00" },
+      { name: "Grande Portion de Frites", price: "10.00" },
       { name: "Croque-Monsieur", price: "5.50" },
       { name: "Petit Hotdog", price: "5.00" },
       { name: "Grand Hotdog", price: "6.50" },
