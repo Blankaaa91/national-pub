@@ -312,38 +312,19 @@ export default function HomePage() {
             </ScrollReveal>
           </div>
 
-          {/* Map placeholder */}
+          {/* Map */}
           <ScrollReveal delay={100} className="mt-8">
-            <div
-              className="w-full h-52 md:h-72 rounded-sm overflow-hidden border border-pub-border relative"
-              aria-label="Carte de localisation — à remplacer par un vrai embed Google Maps"
-            >
-              {/*
-                TODO: Replace with a real Google Maps embed:
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=..."
-                  width="100%" height="100%" style="border:0;" allowFullScreen loading="lazy"
-                  title="Localisation du National Pub à Bevaix"
-                />
-              */}
-              <div
-                className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-pub-muted/50"
-                style={{ background: "radial-gradient(ellipse at 50% 50%, #301C0C 0%, #241408 100%)" }}
-              >
-                <span className="text-4xl" aria-hidden="true">🗺️</span>
-                <p className="text-sm tracking-wide">Carte Google Maps</p>
-                <p className="text-xs text-pub-border">
-                  Rue du Temple 23, 2022 Bevaix
-                </p>
-                <a
-                  href={PUB.mapsDirections}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 btn-ghost !py-1.5 !px-4 !text-xs"
-                >
-                  Ouvrir dans Maps
-                </a>
-              </div>
+            <div className="w-full h-52 md:h-72 rounded-sm overflow-hidden border border-pub-border">
+              <iframe
+                src="https://maps.google.com/maps?q=Rue+du+Temple+23,+2022+Bevaix,+Suisse&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localisation du National Pub — Rue du Temple 23, 2022 Bevaix"
+              />
             </div>
           </ScrollReveal>
         </div>
